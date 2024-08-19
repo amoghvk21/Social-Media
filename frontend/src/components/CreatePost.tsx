@@ -14,6 +14,7 @@ function CreatePost() {
         data.append("username", localStorage.getItem("email"));
         data.append("content", content);
         data.append("img", img);
+        data.append("name", localStorage.getItem("name"));
         fetch("http://localhost:8000/api/createpost/", {
             method: "POST",
             body: data,

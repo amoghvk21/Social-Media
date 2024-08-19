@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 function Feed() {
     const [response, setResponse] = useState([
-        { username: "", content: "", time: "", img: "" },
+        { username: "", content: "", time: "", img: "", name: "" },
     ]); // could add an error post
 
     // Fetching the posts using getposts api backend
@@ -26,7 +26,7 @@ function Feed() {
                         alt={item.img}
                     />
                     <div className="card-body text">
-                        <h5 className="card-title">{item.username}</h5>
+                        <h5 className="card-title">{item.name}</h5>
                         <p className="card-text">{item.content}</p>
                         <p className="card-text">
                             <small className="text-muted">

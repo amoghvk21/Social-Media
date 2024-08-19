@@ -12,7 +12,6 @@ from backend.ChatGPT import ChatGPT
 class GetPostsView(generics.ListAPIView):
     
     # sort by time and only gets first 10
-    #queryset = list(reversed(Post.objects.all()))
     serializer_class = PostSerializer
 
     def get_queryset(self):
@@ -30,12 +29,13 @@ class CreatePostView(APIView):
             username = request.data['username']
             content = request.data['content']
             img = request.data['img']
+            name = request.data['name']
             
             # Check if not offensive
             offensive, reason = ChatGPT(content)
             print(offensive)
             if not offensive:
-                post = Post(username=username, content=content, img=img)
+                post = Post(username=username, content=content, img=img, name=name)
                 post.save()
                 return Response({'message': 'success'}, status=200)
             else:

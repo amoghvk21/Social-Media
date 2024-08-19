@@ -11,8 +11,8 @@ def f(instance, filename):
 
 class Post(models.Model):
     username = models.CharField(max_length=20, blank=False, null=False)
+    name = models.CharField(max_length=20, blank=False, null=False)
     content = models.CharField(max_length=100, blank=False, null=False)
-    #date = models.DateTimeField(default=datetime.now(), blank=False, null=False)
     time = models.DateTimeField(auto_now=True)
     img = models.ImageField(blank=False, null=False, upload_to='backend/static/media/')
 
