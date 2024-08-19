@@ -1,0 +1,53 @@
+[33mcommit 547d038b7cf336f6651f8a64503314c9713f6170[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: Amogh Vishwakarma <amoghvk@icloud.com>
+Date:   Mon Aug 19 02:21:58 2024 +0100
+
+    removed some files
+
+[33mcommit 5d864825b21fe688e29a7468441dd4aafeba6801[m
+Author: Amogh Vishwakarma <amoghvk@icloud.com>
+Date:   Mon Aug 19 02:20:35 2024 +0100
+
+    created the sign on with google button
+
+[33mcommit cf477c9cb4be5124fa3e68bd3fdb24ab3fdc8e23[m
+Author: Amogh Vishwakarma <amoghvk@icloud.com>
+Date:   Mon Aug 19 00:40:40 2024 +0100
+
+    created chatgtp function
+
+[33mcommit 1527416670334a18c3c8db7ab051b6e8c2af723c[m[33m ([m[1;31morigin/main[m[33m)[m
+Author: Amogh Vishwakarma <amoghvk@icloud.com>
+Date:   Sun Aug 18 23:14:04 2024 +0100
+
+    finished create post form
+
+[33mcommit 3463ba0411de8fb44a9613ee401389750d046517[m
+Author: Amogh Vishwakarma <amoghvk@icloud.com>
+Date:   Sun Aug 18 18:04:46 2024 +0100
+
+    fixed syntax error in last commit
+
+[33mcommit 1b96c3d05719b04557658a2a6ff1ed1af1a91d81[m
+Author: Amogh Vishwakarma <amoghvk@icloud.com>
+Date:   Sun Aug 18 18:03:54 2024 +0100
+
+    linked pages
+
+[33mcommit 15b4b70e2b9267e8b728bb37ab4aadff0c36d211[m
+Author: Amogh Vishwakarma <amoghvk@icloud.com>
+Date:   Sun Aug 18 13:24:59 2024 +0100
+
+    navbar and feed
+
+[33mcommit c08000370456aba51658a8ef24ba5a4caa38ca9d[m
+Author: Amogh Vishwakarma <amoghvk@icloud.com>
+Date:   Sun Aug 18 13:24:47 2024 +0100
+
+    navbar and feed
+
+[33mcommit bf3925cbd2cda0d29b9e4a00067fca3a1a45d3a9[m
+Author: Amogh Vishwakarma <amoghvk@icloud.com>
+Date:   Sun Aug 18 00:22:16 2024 +0100
+
+    backend done

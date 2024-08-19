@@ -1,0 +1,30 @@
+.images {
+    width: 50%;
+    height: 50%;
+    padding-top: 10px;
+    margin-left: 25%;
+}
+
+.container {
+    margin: auto;
+}
+
+.text {
+    text-align: center;
+    margin: auto;
+}
+
+.navbar {
+    margin-bottom: 2.5%;
+    background-color: #e3f2fd;
+}
+
+.page-title {
+    text-align: center;
+    margin-bottom: 2.5%;
+}
+
+#create-post-form {
+    margin-left: 25%;
+    margin-right: 25%;
+}
