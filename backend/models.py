@@ -18,3 +18,11 @@ class Post(models.Model):
 
     def __str__(self):
         return f'{self.username}: {self.content} with {self.img.name}'
+
+
+class Following(models.Model):
+    username1 = models.CharField(max_length=20, blank=False, null=False)
+    username2 = models.CharField(max_length=20, blank=False, null=False)
+
+    def __str__(self):
+        return f'{self.username1} follows {self.username2}'

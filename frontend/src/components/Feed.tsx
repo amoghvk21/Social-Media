@@ -5,14 +5,34 @@ function Feed() {
         { username: "", content: "", time: "", img: "", name: "" },
     ]); // could add an error post
 
+    let data = new FormData();
+    data.append("username", localStorage.getItem("email"));
+
     // Fetching the posts using getposts api backend
     useEffect(() => {
         fetch("http://localhost:8000/api/getposts/", {
-            method: "GET",
+            method: "POST",
+            body: data
         })
             .then((res) => res.json())
-            .then((res) => {setResponse(res); console.log(res)});
+            .then((res) => setResponse(res.posts));
     }, []);
+
+
+    function toggleFollow(event) {
+
+        let data = new FormData();
+        data.append("username1", localStorage.getItem("email"));
+        data.append("username2", event.target.value);
+
+        fetch("http://localhost:8000/api/togglefollowing/", {
+            method: 'POST',
+            body: data
+        })
+        .then((res) => res.json())
+        .then((res) => alert(res.message))
+        .then((res) => window.location.reload());;
+    }
 
 
     return (
@@ -33,6 +53,11 @@ function Feed() {
                                 Posted at {item.time}
                             </small>
                         </p>
+                    </div>
+                    <div className="col-12">
+                        <button className="btn btn-primary" type="submit" value={item.username} onClick={toggleFollow}>
+                            Toggle Follow
+                        </button>
                     </div>
                 </div>
             ))}

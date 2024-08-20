@@ -2,8 +2,8 @@ import Feed from "./components/Feed";
 import Navbar from "./components/Navbar";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import CreatePost from "./components/CreatePost";
-import { useContext } from "react";
 import Login from "./components/Login";
+import Explore from "./components/Explore";
 
 /*
 function App() {
@@ -36,6 +36,7 @@ function App() {
                 <Routes>
                     <Route path="/" element={<Feed />} />
                     <Route path="/create" element={<CreatePost />} />
+                    <Route path="/explore" element={<Explore />} />
                 </Routes>
             </Router>
         );
